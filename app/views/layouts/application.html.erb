@@ -12,6 +12,7 @@
   <body>
      <header class="row">
        <div class="col-3">
+       <%= link_to root_path do %>
        <div class="circle">
          <br />
          YOLO
@@ -19,6 +20,7 @@
          LOL
          <br />
          OMG
+        <% end %>
      </div>
        </div>
        <div class="col-4">
@@ -26,7 +28,7 @@
        </div>
        <div class="col-5">
        <div class="col-5 links">
-         <%= link_to 'Contribute', '#' %>
+         <%= link_to 'Contribue', new_quote_path %>
          <%= link_to 'About', '#' %>
        </div>
      </header>
@@ -45,7 +47,7 @@
        <div class="container">
          <div class="row">
            <div class="col-6">
-            <%= link_to "This isn't enough, I need more", "#", class: 'next-quote' %>
+            <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
            </div>
            <div class="col-6 footer-blurb">
              Finally working on what excites me! <ahref="[YOUR_PORTFOLIO_URL]">Zack V</a><br />
