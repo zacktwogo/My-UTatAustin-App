@@ -46,8 +46,9 @@
            </div>
            <%= simple_form_for Quote.new do |f| %>
            <div class="modal-body">
-              <%= f.input :saying %>
-              <%= f.input :author %>
+              <%= f.input :saying, label: "What is the saying you want to add?", placeholder: "Fear is the disease. Hustule is the antidote" %>
+              <br />
+              <%= f.input :author, label: "Who is the author of the quote?", placeholder: "Travis Kalanick" %>
               <br />
               <%= f.submit 'Create', class: 'btn btn-danger' %>
               <% end %>
@@ -78,10 +79,10 @@
      <div class="footer">
        <div class="container">
          <div class="row">
-           <div class="col-6">
+           <div class="col-12 col-sm-6">
             <%= link_to "This isn't enough, I need more", root_path, class: 'next-quote' %>
            </div>
-           <div class="col-6 footer-blurb">
+           <div class="col-12 col-sm-6 footer-blurb">
              Finally working on what excites me! <ahref="[YOUR_PORTFOLIO_URL]">Zack V</a><br />
              Want to build your own Splutry Web App - <a href="https://online.bootcampspot.com">Learn how to code here</a>
             </div>
